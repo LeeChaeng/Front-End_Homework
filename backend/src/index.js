@@ -1,6 +1,7 @@
 import express from "../node_modules/express";
 import bodyParser from "../node_modules/body-parser";
 import path from "path";
+import fs from "fs";
 
 import api from "./api";
 

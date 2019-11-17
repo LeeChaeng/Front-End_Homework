@@ -1,0 +1,117 @@
+{
+  "data": [
+    {
+      "date": "2019-12-01",
+      "type": "income",
+      "price": 300000
+    },
+    {
+      "date": "2019-12-01",
+      "type": "expenses",
+      "product": "과자",
+      "price": 10000,
+      "shop": "인하슈퍼"
+    },
+    {
+      "date": "2019-12-01",
+      "type": "expenses",
+      "product": "우유",
+      "price": 6000,
+      "shop": "인하슈퍼"
+    },
+    {
+      "date": "2019-12-01",
+      "type": "expenses",
+      "product": "콜라",
+      "price": 1500,
+      "shop": "인하슈퍼"
+    },
+    {
+      "date": "2019-12-02",
+      "type": "income",
+      "price": 200000
+    },
+    {
+      "date": "2019-12-02",
+      "type": "expenses",
+      "product": "볼펜",
+      "price": 1000,
+      "shop": "인하문구"
+    },
+    {
+      "date": "2019-12-02",
+      "type": "expenses",
+      "product": "노트",
+      "price": 10000,
+      "shop": "인하문구"
+    },
+    {
+      "date": "2019-12-02",
+      "type": "expenses",
+      "product": "시계",
+      "price": 100000,
+      "shop": "인하금방"
+    },
+    {
+      "date": "2019-12-02",
+      "type": "expenses",
+      "product": "책",
+      "price": 10000,
+      "shop": "공룡서점"
+    },
+    {
+      "date": "2019-12-03",
+      "type": "income",
+      "price": 2000000
+    },
+    {
+      "date": "2019-12-03",
+      "type": "expenses",
+      "product": "컴퓨터",
+      "price": 2000000,
+      "shop": "컴퓨터세상"
+    },
+    {
+      "date": "2019-12-03",
+      "type": "expenses",
+      "product": "모니터",
+      "price": 105000,
+      "shop": "컴퓨터세상"
+    },
+    {
+      "date": "2019-12-03",
+      "type": "expenses",
+      "product": "껌",
+      "price": 100,
+      "shop": "인하슈퍼"
+    },
+    {
+      "date": "2019-12-03",
+      "type": "expenses",
+      "product": "인형",
+      "price": 10000,
+      "shop": "인하슈퍼"
+    },
+    {
+      "date": "2019-12-03",
+      "type": "expenses",
+      "product": "CD",
+      "price": 5000,
+      "shop": "신나라레코드"
+    },
+    {
+      "date": "2019-12-03",
+      "type": "expenses",
+      "product": "빵",
+      "price": 1000,
+      "shop": "빵시장"
+    },
+    {
+      "date": "2019-12-03",
+      "type": "expenses",
+      "product": "콩나물",
+      "price": 1000,
+      "shop": "동네슈퍼"
+    }
+  ]
+}
