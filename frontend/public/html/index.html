@@ -1,14 +1,106 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
     <title>가계부</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="javascript/table.js"></script>
+    <script src="javascript/modal.js"></script>
     <link rel="stylesheet" href="css/index.css" />
   </head>
+
   <body>
-    <div id="title">가계부</div>
-    <table></table>
-    <script src="javascript/table.js"></script>
+    <div ng-app="myApp" ng-controller="myCtrl">
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="close_btn()">&times;</span>
+          <form action="/api/v1/appendData" method="post" id="appendF">
+            <a style="font-size:25px;">가계부 추가하기</a><br /><br />
+            <input
+              type="radio"
+              name="chk_type"
+              value="income"
+              id="income_R"
+              onclick="show_income()"
+            />
+            수입
+            <input
+              type="radio"
+              name="chk_type"
+              value="expense"
+              id="expense_R"
+              onclick="show_expense()"
+            />지출 <br /><br />
+            날짜 : <input type="date" name="date" id="date" /><br />
+            가격 :
+            <input
+              type="number"
+              name="price"
+              id="price"
+              style="width: 139px;"
+            />
+            <br />
+            <div id="expense">
+              품목 :
+              <input
+                type="text"
+                name="product"
+                style="width:139px"
+                id="product"
+              /><br />
+              구입처 :
+              <input type="text" name="shop" style="width: 124px;" id="shop" />
+              <br />
+            </div>
+            <input type="submit" value="입력" id="sub_btn" />
+          </form>
+        </div>
+      </div>
+      <div id="title" style="font-size:30px;">
+        가계부
+      </div>
+      <table id="household">
+        <tbody ng-repeat="x in date_array[0]">
+          <tr>
+            <td class="blue" rowspan="{{x.count+5}}">{{$index+1}}</td>
+            <td class="green sAlign">날짜:{{x.date}}</td>
+            <td class="green sAlign">수입</td>
+            <td class="green" colspan="2">{{x.price | number}}</td>
+          </tr>
+          <tr>
+            <td class="green sAlign">번호</td>
+            <td class="green sAlign">품목</td>
+            <td class="green sAlign">가격</td>
+            <td class="green sAlign">구입처</td>
+          </tr>
+          <tr ng-repeat="y in result[$index]">
+            <td class="yellow sAlign">{{y.id}}</td>
+            <td class="yellow">{{y.product}}</td>
+            <td class="yellow rAlign">{{y.price | number}}</td>
+            <td class="yellow">{{y.shop}}</td>
+          </tr>
+          <tr>
+            <td class="lightgreen sAlign">개수</td>
+            <td class="lightgreen" colspan="3">{{x.count}}</td>
+          </tr>
+          <tr>
+            <td class="lightgreen sAlign">총지출</td>
+            <td class="lightgreen" colspan="3">{{x.total_price | number}}</td>
+          </tr>
+          <tr>
+            <td class="lightgreen sAlign">잔액</td>
+            <td ng-if="x.remainder>0" class="lightgreen" colspan="3">
+              {{x.remainder | number}}
+            </td>
+            <td ng-if="x.remainder<0" class="lightgreen sRed" colspan="3">
+              [적자]{{x.remainder | number}}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="button">
+        <input type="button" value="추가" id="myBtn" onclick="add_btn()" />
+      </div>
+    </div>
   </body>
 </html>
