@@ -1,1 +1,103 @@
-[{"date":"2019-12-01","type":"income","price":300000},{"date":"2019-12-01","type":"expense","price":10000,"product":"과자","shop":"인하슈퍼"},{"date":"2019-12-01","type":"expense","price":6000,"product":"우유","shop":"인하슈퍼"},{"date":"2019-12-01","type":"expense","price":1500,"product":"콜라","shop":"인하슈퍼"},{"date":"2019-12-02","type":"income","price":200000},{"date":"2019-12-02","type":"expense","price":1000,"product":"볼펜","shop":"인하문구"},{"date":"2019-12-02","type":"expense","price":10000,"product":"노트","shop":"인하문구"},{"date":"2019-12-02","type":"expense","price":100000,"product":"시계","shop":"인하금방"},{"date":"2019-12-02","type":"expense","price":10000,"product":"책","shop":"공룡서점"},{"date":"2019-12-03","type":"income","price":2000000},{"date":"2019-12-03","type":"expense","price":2000000,"product":"컴퓨터","shop":"컴퓨터세상"},{"date":"2019-12-03","type":"expense","price":105000,"product":"모니터","shop":"컴퓨터세상"},{"date":"2019-12-03","type":"expense","price":100,"product":"껌","shop":"인하슈퍼"},{"date":"2019-12-03","type":"expense","price":10000,"product":"인형","shop":"인하슈퍼"},{"date":"2019-12-03","type":"expense","price":5000,"product":"CD","shop":"신나라레코드"},{"date":"2019-12-03","type":"expense","price":1000,"product":"콩나물","shop":"동네슈퍼"},{"date":"2019-12-03","type":"expense","price":1000,"product":"빵","shop":"빵시장"}]
+[
+  { "date": "2019-12-01", "type": "income", "price": 300000 },
+  {
+    "date": "2019-12-01",
+    "type": "expense",
+    "price": 10000,
+    "product": "과자",
+    "shop": "인하슈퍼"
+  },
+  {
+    "date": "2019-12-01",
+    "type": "expense",
+    "price": 6000,
+    "product": "우유",
+    "shop": "인하슈퍼"
+  },
+  {
+    "date": "2019-12-01",
+    "type": "expense",
+    "price": 1500,
+    "product": "콜라",
+    "shop": "인하슈퍼"
+  },
+  { "date": "2019-12-02", "type": "income", "price": 200000 },
+  {
+    "date": "2019-12-02",
+    "type": "expense",
+    "price": 1000,
+    "product": "볼펜",
+    "shop": "인하문구"
+  },
+  {
+    "date": "2019-12-02",
+    "type": "expense",
+    "price": 10000,
+    "product": "노트",
+    "shop": "인하문구"
+  },
+  {
+    "date": "2019-12-02",
+    "type": "expense",
+    "price": 100000,
+    "product": "시계",
+    "shop": "인하금방"
+  },
+  {
+    "date": "2019-12-02",
+    "type": "expense",
+    "price": 10000,
+    "product": "책",
+    "shop": "공룡서점"
+  },
+  { "date": "2019-12-03", "type": "income", "price": 2000000 },
+  {
+    "date": "2019-12-03",
+    "type": "expense",
+    "price": 2000000,
+    "product": "컴퓨터",
+    "shop": "컴퓨터세상"
+  },
+  {
+    "date": "2019-12-03",
+    "type": "expense",
+    "price": 105000,
+    "product": "모니터",
+    "shop": "컴퓨터세상"
+  },
+  {
+    "date": "2019-12-03",
+    "type": "expense",
+    "price": 100,
+    "product": "껌",
+    "shop": "인하슈퍼"
+  },
+  {
+    "date": "2019-12-03",
+    "type": "expense",
+    "price": 10000,
+    "product": "인형",
+    "shop": "인하슈퍼"
+  },
+  {
+    "date": "2019-12-03",
+    "type": "expense",
+    "price": 5000,
+    "product": "CD",
+    "shop": "신나라레코드"
+  },
+  {
+    "date": "2019-12-03",
+    "type": "expense",
+    "price": 1000,
+    "product": "콩나물",
+    "shop": "동네슈퍼"
+  },
+  {
+    "date": "2019-12-03",
+    "type": "expense",
+    "price": 1000,
+    "product": "빵",
+    "shop": "빵시장"
+  }
+]

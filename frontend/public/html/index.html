@@ -13,7 +13,7 @@
       <div id="myModal" class="modal">
         <div class="modal-content">
           <span class="close" onclick="close_btn()">&times;</span>
-          <form action="/api/v1/appendData" method="post" id="appendF">
+          <form action="/api/v1/appendData" method="post" id="appendF" onsubmit="return frmsubmit()">
             <a style="font-size:25px;">가계부 추가하기</a><br /><br />
             <input
               type="radio"
